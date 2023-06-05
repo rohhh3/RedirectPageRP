@@ -23,7 +23,7 @@ namespace Middleware.Utlis
             string browserName = userAgentParser.GetClient().Match.Name;
             if(IsSupportedBrowser(browserName))
             {
-                if (browserName == "Edge" || browserName == "Edg" || browserName == "IE" || browserName == "Trident" || browserName == "msedge")
+                if (browserName == "Microsoft Edge" || browserName == "Edg" || browserName == "IE" || browserName == "Trident" || browserName == "msedge")
                 {
                     context.Response.Redirect("https://www.mozilla.org/pl/firefox/new/");
                     return;
